@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jc.farm.dao.UserDao">
+
+    <!-- 通用查询结果列 -->
+    <select id="getUser" resultType="com.jc.farm.entity.User" parameterType="java.lang.String">
+        select * from user where username = #{_parameter}
+    </select>
+
+</mapper>
